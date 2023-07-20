@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <title>SpeechOpenAI</title>
+	<style>
+		body{
+		height: 100%;
+		font-family: 'Noto Sans', sans-serif;
+		background-image: url(https://openai1.netlify.app/pexels-johannes-plenio-1103970.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		}
+		.search{
+			min-height:100vh;
+		}
+		button{
+			width:80px;
+			height:30px;
+			background-color:#004fff;
+			color:white;
+			box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+			font-size:16px;
+			font-weight:bold;
+			border-radius:20px;
+				}
+				input{
+			border: none;
+			border-bottom: 1px solid  black;
+			box-shadow:none;
+			outline:none;
+			background-color: transparent;
+			color:black;
+			font-size:15px;
+		}
+		.textarea{
+			font-family : 'Noto Sans', sans-serif;
+			background-color: transparent;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align:center;">OpenAI</h1>
+	<h3 style="text-align:center; margin-top:5px;">With speech</h3>
+	
+	<div style="margin-right:auto; margin-left:auto; display:block;" class="search">
+		
+			<center><input length="100" type="text" placeholder="Click button to start to record" autocomplete="off">
+			<button class="dictate">Active</button></center>
+			<br>
+			<center><textarea id="aoa" name="aoa" style="font-family : 'Noto Sans', sans-serif; background-color:transparent; margin-top:15px;" rows="12" cols="40" ></textarea></center>
+			<h6 style="text-align:center; margin-top:100px;">Made by Sooan Lee</h6>
+</div>
+
+<script  type="module" src="main.js"></script>
+</body>
+</html>
