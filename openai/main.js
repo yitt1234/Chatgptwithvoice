@@ -66,10 +66,10 @@ const store = {
     });
   }
 })();
-// openai api key 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
+
 function openai() {
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "Your API key",
   });
   const openai = new OpenAIApi(configuration);
   const bb = document.querySelector("#aoa");
